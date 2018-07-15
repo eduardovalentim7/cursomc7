@@ -20,8 +20,7 @@ public class CategoriaResource {
 		Categoria cat2 = new Categoria(null,"Escritorio");
 		
 		List<Categoria> lista = new ArrayList<>();
-		lista.add(cat1);
-		lista.add(cat2);
+		lista.addAll(cat1,cat2);
 		
 		return lista;
 		
