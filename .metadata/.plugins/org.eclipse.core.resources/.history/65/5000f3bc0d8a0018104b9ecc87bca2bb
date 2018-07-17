@@ -1,0 +1,5 @@
+package com.eduardo.cursomc7.services.exceptions;
+
+public class ObjectNotFoundException {
+
+}

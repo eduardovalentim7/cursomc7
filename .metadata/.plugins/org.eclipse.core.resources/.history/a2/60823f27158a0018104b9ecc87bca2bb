@@ -1,0 +1,11 @@
+package com.eduardo.cursomc7.resources.exceptions;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+
+//Handler intercepta uma excessão da classe "CategortiaService"
+@ControllerAdvice
+public class ResourceExceptionHandler {
+	
+
+}
