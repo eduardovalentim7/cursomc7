@@ -44,8 +44,8 @@
 		<item value="480" key="DIALOG_WIDTH"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
 		<item value="617" key="DIALOG_HEIGHT"/>
-		<item value="557" key="DIALOG_X_ORIGIN"/>
-		<item value="130" key="DIALOG_Y_ORIGIN"/>
+		<item value="548" key="DIALOG_X_ORIGIN"/>
+		<item value="111" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
@@ -62,6 +62,8 @@
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="completion_proposal_size">
+		<item value="220" key="size.y"/>
+		<item value="535" key="size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>
