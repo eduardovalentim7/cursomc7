@@ -16,8 +16,6 @@ import com.eduardo.cursomc7.domain.Produto;
 import com.eduardo.cursomc7.domain.enums.TipoCliente;
 import com.eduardo.cursomc7.repositories.CategoriaRepository;
 import com.eduardo.cursomc7.repositories.CidadeRepository;
-import com.eduardo.cursomc7.repositories.ClienteRepository;
-import com.eduardo.cursomc7.repositories.EnderecoRepository;
 import com.eduardo.cursomc7.repositories.EstadoRepository;
 import com.eduardo.cursomc7.repositories.ProdutoRepository;
 
@@ -35,12 +33,6 @@ public class Cursomc7Application implements CommandLineRunner{
 	
 	@Autowired
 	private EstadoRepository  estadoRepository;
-	
-	@Autowired
-	private ClienteRepository clienteRepository;
-	
-	@Autowired
-	private EnderecoRepository enderecoRepository;
 	
 
 	public static void main(String[] args) {
@@ -91,12 +83,7 @@ public class Cursomc7Application implements CommandLineRunner{
 		cli1.getTelefones().addAll(Arrays.asList("33333333","33413318"));
 		
 		Endereco e1 = new Endereco(null,"Rua Flores","300","Apto 203","Jardim","61977080",cli1,c1);
-		Endereco e2 = new Endereco(null,"Av Matos","105","Sala 800","Centro","61970000",cli1,c2);
+		Endereco e1 = new Endereco(null,"Av Matos","105","Sala 800","Centro","61970000",cli1,c2);
 		
-		cli1.getEnderecos().addAll(Arrays.asList(e1,e2));
-		
-		
-		clienteRepository.save(Arrays.asList(cli1));
-		enderecoRepository.save(Arrays.asList(e1,e2));
 	}
 }
